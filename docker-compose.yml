@@ -17,8 +17,6 @@ services:
       - 6379:6379
     volumes:
       - ./redis:/data
-    environment:
-      - REDIS_PASSWORD=redis123
   mariadb:
     container_name: mariadb
     image: mariadb
